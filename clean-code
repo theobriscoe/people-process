@@ -1,0 +1,50 @@
+Clean Code 
+
+
+Supportable Code
+- Clean, Clear Production Logs 
+- Tranaction Id in  log messages 
+- Log search tool such as Splunk 
+- Client Side logging 
+- Log actionable information: identifiers  userId, action, transaction id
+
+
+Designing for Supportable 
+- Specify monitoring dashboard upfront 
+- Specify action to take for alerts
+- support graceful shutdown 
+- expect immediate shutdown
+- Health Check + Dependent system health check 
+- Batch jobs need to be able to resume 
+- Support multiple instances running 
+- Create Runbooks 
+
+Review Process 
+- Continually review error logs to remediate 
+- Continually remove noise from logs 
+- Create tickets to fix errors, include in Sprint 
+- Create alerts for errors 
+- 
+
+Readability 
+- Standard code format enforced on checkin 
+- Coding style guide 
+
+Observable 
+- Method Entry Logging 
+- Method Exit Logging
+- Exception logging 
+-  Consistent Error handling
+    - Log with details, what is happening, 
+    - Retry in approte  
+    - Rolling back DB transactions is difficult 
+    - Mark as partially completed 
+    - Return info to caller
+
+Understandability 
+- Be able to view configuration in one place (keep configuration in one place 
+
+Maintainability
+- Remove unused code / dead code
+- 
+
